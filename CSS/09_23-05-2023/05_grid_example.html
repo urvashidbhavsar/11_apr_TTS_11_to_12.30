@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .GridExample{
+            background-color: #a1f1f1;
+        }
+        .GridExample .Margin-g{
+            margin: 0px 80px;
+        }
+        .GridExample .Padding-g{
+            padding: 50px 0px;
+        }
+        .GridExample .GridBox{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .GridExample .GridBox img{
+            height: auto;
+            max-width: 100%;
+        }
+        .GridExample .GridBox img:hover{
+            filter: contrast(90%);
+        }
+    </style>
+</head>
+<body>
+    <section class="GridExample">
+        <div class="Margin-g">
+            <div class="Padding-g">
+                <div class="GridBox">
+                    <div class="innerGrid">
+                        <img src="images/grid1.jpg" alt="">
+                        <h2>Paris</h2>
+                    </div>
+                    <div class="innerGrid">
+                        <img src="images/grid2.jpg" alt="">
+                        <h2>Thailand</h2>
+                    </div>
+                    <div class="innerGrid">
+                        <img src="images/grid3.jpg" alt="">
+                        <h2>Greece</h2>
+                    </div>
+                    <div class="innerGrid">
+                        <img src="images/grid4.jpg" alt="">
+                        <h2>Spain</h2>
+                    </div>
+                    <div class="innerGrid">
+                        <img src="images/grid5.jpg" alt="">
+                        <h2>Chaina</h2>
+                    </div>
+                    <div class="innerGrid">
+                        <img src="images/grid6.jpg" alt="">
+                        <h2>IceLand</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

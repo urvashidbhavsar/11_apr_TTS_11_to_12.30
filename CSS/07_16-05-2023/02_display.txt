@@ -1,0 +1,32 @@
+display property used for how to content display on your webpage.
+
+display : inline 
+display : inline-block 
+display : block
+display : flex 
+display : grid 
+display : inline-grid  
+display : flexbox 
+
+=> some property only work/used with display : flex 
+(1) flex (flex-grow, flex-basis, flex-shrink)
+(2) flex-basis 
+(3) flex-grow 
+(4) flex-shrink 
+(5) flex-direction 
+(6) flex-wrap 
+(7) flex-flow (flex-direction, flex-wrap)
+(8) gap (row-gap, column-gap) 
+(9) justify-content 
+(10) align-item
+
+=> some property are only work/used with display: grid 
+(1) grid-template-rows 
+(2) grid-template-columns 
+(3) gap (row-gap, column-gap)
+(4) justify-items 
+(5) align-content 
+(6) place-content 
+(7) grid-row 
+(8) grid-column
+(10) align-self 

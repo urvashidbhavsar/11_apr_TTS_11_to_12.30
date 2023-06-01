@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Example</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .FlexExample{
+            background-color: white;
+        }
+        .FlexExample .Margin-Ex{
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        .FlexExample .padding-ex{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .FlexExample .FlexBox{
+            display: flex;
+            gap: 30px;
+        }
+        .FlexExample .FlexBox .Flex-left{
+            flex: 1;
+        }
+        .FlexExample .FlexBox .Flex-left .left_title{
+            color: gray;
+            font-size: 22px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .FlexExample .FlexBox .Flex-left h1{
+            padding: 20px 0px;
+            font-size: 37px;
+        }
+        .FlexExample .FlexBox .Flex-left .para{
+            color: gray;
+            letter-spacing: 1px;
+            padding-bottom: 20px;
+        }
+        .FlexExample .FlexBox .Flex-left button{
+                height: 45px;
+                width: 119px;
+                background: #134201;
+                color: white;
+                border: 2px solid transparent;
+                font-weight: 700;
+                border-radius: 9px;
+        }
+        .FlexExample .FlexBox .Flex-right{
+            flex: 1;
+        }
+        .FlexExample .FlexBox .Flex-right img{
+            height: auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section class="FlexExample">
+        <div class="Margin-Ex">
+            <div class="padding-ex">
+                <div class="FlexBox">
+                    <div class="Flex-left">
+                        <p class="left_title">Locally Grown - 100% Natural</p>
+                        <h1>The Huge variety of the freshest fruits and vegetables</h1>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto repellat eius facere consectetur deleniti obcaecati? Explicabo officiis, esse earum voluptas eaque minus quisquam sint similique voluptates ipsum asperiores aspernatur eveniet?</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="Flex-right">
+                        <img src="images/about.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

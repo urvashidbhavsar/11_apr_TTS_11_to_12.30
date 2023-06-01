@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv{
+            height: 300px;
+            width: 400px;
+            padding: 20px;
+            background-image: url(banner2.jpg);
+            background-position: center;
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+            border: 10px dashed red;
+
+            /* background origin work with background image. how to position in div area */
+            /* image cover with border */
+            /* background-origin: border-box; */
+            
+            /* do not count border and padding */
+            /* background-origin: content-box; */
+
+            /* default value */
+            background-origin: padding-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+html => HyperText Markup Language.
+
+start/developed => 1993
+who's developed? => tim berners' lee
+
+html is not case sensitive
+
+http => HyperText Transfer Protocol
+https => HyperText Transfer Protocol secure
+
+what is tag?
+=> a word/element written with angle brecket is known as tag.
+for ex, <html> is tag..
+
+what is element?
+=> a word written between angle brecket is known as an element.
+for ex, in <html> tag. html is an element.
+
+what is attribute??
+=> an additional functionality.
+for ex. <body bgcolor="blue">
+
+what is container??
+=> container is a store values .
+for ex. <html>... </html>
+<head>...</head>
+<body>...</body>
+
+structure tag / closing tag =>
+for ex. <html>... </html>
+<head>...</head>
+<body>...</body>
+<p>...</p>
+
+non-structure tag / void tag / self closing tag :
+for ex, 
+<img>, <meta>, <input>, <br>

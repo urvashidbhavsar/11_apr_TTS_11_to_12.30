@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- in table for merge cell used rowspan and colspan attribure 
+        these attribute are used only in <td> or <th> tag.
+
+        <tbody> tag => table body
+        <caption> tag => give title on the table
+
+        in rowspan, remove column from next row.
+        in colspan, remove column on that particular row
+    -->
+
+    <table border="1">
+        <caption><i>Product Info</i></caption>
+        <tbody>
+            <!-- 1st row -->
+            <tr>
+                <th>Product</th>
+                <th>Flavors</th>
+            </tr>
+            <!-- 2nd row -->
+            <tr>
+                <td rowspan="3">Milk</td>
+                <td>Almond</td>
+            </tr>
+            <!-- 3rd row -->
+            <tr>
+                <td>Chocolate</td>
+            </tr>
+            <!-- 4th row -->
+            <tr>
+                <td>Mango</td>
+            </tr>
+            <!-- 5th row -->
+            <tr>
+                <td colspan="2">These are exclusive Flavors</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

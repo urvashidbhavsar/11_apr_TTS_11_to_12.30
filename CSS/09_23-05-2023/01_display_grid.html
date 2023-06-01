@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* content show as tabular wise
+            default = row work
+        */
+        .main{
+            display: grid;
+            /* grid-template-columns: auto auto auto auto auto; */
+            /* grid-template-columns: 1fr 1fr 1fr 2fr 1fr; */
+            grid-template-columns: repeat(5,1fr);
+            /* column-gap: ; */
+            /* row-gap: ; */
+            gap: 20px;
+            justify-items: center;
+        }
+        .sub1, .sub3, .sub5, .sub7, .sub9{
+            height: 100px;
+            width: 100px;
+            background-color: crimson;
+        }
+        .sub2, .sub4, .sub6, .sub8, .sub10{
+             height: 100px;
+            width: 100px;
+            background-color: #e25b76;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub1">Div1</div>
+        <div class="sub2">Div2</div>
+        <div class="sub3">Div3</div>
+        <div class="sub4">Div4</div>
+        <div class="sub5">Div5</div>
+        <div class="sub6">Div6</div>
+        <div class="sub7">Div7</div>
+        <div class="sub8">Div8</div>
+        <div class="sub9">Div9</div>
+        <div class="sub10">Div10</div>
+    </div>
+</body>
+</html>

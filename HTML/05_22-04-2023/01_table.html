@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table is a collection of rows and columns
+        horizontally => (left to right) column
+        vertically => (top to bottom) row
+
+        cell => the box create with collection of row and column
+        <tr> => table row
+        <td> => table data
+        <th> => table heading
+        always remember, columns created in rows
+
+        style =>
+        background-color, color, border-color, text-align, height, width
+
+        cellpadding => give a space between content and cell 
+        cellspacing => give a space between cell and border
+        rules => remove cellspacing and apply single border
+    -->
+    <table border="1" cellpadding="5px" cellspacing="5px" style="width:50%;text-align: center;border-color:green">
+        <!-- 1st row -->
+        <tr style="background-color: orange;">
+            <th>Sr. No</th>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Team</th>
+        </tr>
+        <!-- 2nd row -->
+        <tr>
+            <th style="background-color: orange;">1</th>
+            <td>101</td>
+            <td>Vijay</td>
+            <td>Red</td>
+        </tr>
+        <!-- 3rd row -->
+        <tr>
+            <th style="background-color: orange;">2</th>
+            <td>102</td>
+            <td>Divya</td>
+            <td>Blue</td>
+        </tr>
+        <!-- 4th row -->
+        <tr>
+            <th style="background-color: orange;">3</th>
+            <td>103</td>
+            <td>Suraj</td>
+            <td>Green</td>
+        </tr>
+    </table>
+</body>
+</html>

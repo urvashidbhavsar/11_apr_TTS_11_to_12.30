@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- canvas is used to draw a 2D graphics -->
+    <canvas id="mycanvas" height="500px" width="500px"></canvas>
+
+    <!-- in canvas you can draw a graphics using js code -->
+    <script>
+        var rect = document.getElementById("mycanvas");
+        var draw = rect.getContext("2d")
+        draw.fillRect(0,0,100,100);
+    </script>
+</body>
+</html>

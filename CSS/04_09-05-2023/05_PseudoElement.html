@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            content: "\1F61C";
+        }
+        h1::after{
+            content: "\1F61C";
+        }
+        .mydiv{
+            height: auto;
+            width: 200px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .mydiv::first-letter{
+            font-size: 30px;
+        }
+        .mydiv::first-line{
+            color: red;
+        }
+        .mydiv::selection{
+            background-color: black;
+            color: white;
+        }
+        li::marker{
+            color: red;
+        }
+        input::placeholder{
+            text-align: center;
+            color: black;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            padding: 10px;
+        }
+        tr:nth-child(odd){
+            background-color: blueviolet;
+        }
+        tr:nth-child(even){
+            background-color: #2be234;
+        }
+    </style>
+</head>
+<body>
+    <!-- pseudo element used with ::pseudo-element -->
+    <h1>Hello world</h1>
+    <div class="mydiv">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sit. Iusto, ut! Nesciunt quia exercitationem quos, aliquam id in corrupti harum veniam asperiores nulla veritatis quisquam enim! Unde, nisi. Corporis.
+    </div>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+    </ul>
+    <br><br>
+    <input type="text" name="" id="" placeholder="Enter name"><hr>
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Address</td>
+        </tr>
+        <tr>
+            <td>Xyz</td>
+            <td>43</td>
+            <td>Surat</td>
+        </tr>
+        <tr>
+            <td>Xyz</td>
+            <td>43</td>
+            <td>Surat</td>
+        </tr>
+    </table>
+
+</body>
+</html>

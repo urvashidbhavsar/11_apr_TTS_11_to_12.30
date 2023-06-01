@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- (1) in action attribute write a file name which you forwarded. if we cant forward set #.
+    (2) method =>
+        - get => take an information from user and display in URL.
+        - post => wrap all information and set to the next page.
+-->
+    <form action="#" method="post" name="form1">
+        <label for="uname">Name :</label>
+        <!-- use together => readonly value="Xyz" -->
+        <input type="text" name="username" id="uname" placeholder="Enter your name" required minlength="5" maxlength="10">
+        <br><br>
+        <!-- radio button is used to select one option from multiple option 
+            here name is complusory.
+        -->
+        <label for="">Gender</label>
+        <input type="radio" name="g" id=""> 
+        <label for="">Male</label>
+        <input type="radio" name="g" id="">
+        <label for="">Female</label>
+        <br><br>
+        <!-- checkbox 
+            use to multiple option selection
+        -->
+        <label for="">Hobbies</label>
+        <input type="checkbox" name="c1" id="">
+        <label for="">Reading</label>
+        <input type="checkbox" name="c2" id="">
+        <label for="">Listening</label>
+        <input type="checkbox" name="" id="">
+        <label for="">Cooking</label>
+        <br><br>
+        <!-- textarea
+            used to write address, summary, description and long information
+        -->
+        <label for="">Address</label>
+        <textarea name="" id="" cols="40" rows="2" placeholder="Enter Address"></textarea>
+        <br><br>
+        <!-- select & option / dropdown list -->
+        <label for="">City</label>
+        <select name="" id="">
+            <option value="0">---select---</option>
+            <option value="1">Surat</option>
+            <option value="2">Baroda</option>
+        </select>
+
+
+        <br><br>
+        <!-- input type button -->
+        <input type="submit" name="" id="" value="Register">
+        <input type="reset" name="" id="" value="Clear">
+        <input type="button" name="" id="" value="Button">
+
+        <br><br>
+        <!-- button tag -->
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+        <button type="button">Button</button>
+    </form>
+</body>
+</html>

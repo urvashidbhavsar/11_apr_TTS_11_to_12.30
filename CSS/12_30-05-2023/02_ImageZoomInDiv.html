@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ImgZoom{
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+            margin: 150px auto;
+            overflow: hidden;
+        }
+        .ImgZoom img{
+             height: 200px;
+            width: 300px;
+            transition: 1s all ease-in-out;
+        }
+        .ImgZoom:hover img{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="ImgZoom">
+        <img src="grid3.jpg" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+imagemap = apply some link on image some portion
+
+imagemap apply on 3 shapes =>
+rectangle, circle and polygon
+
+tag??
+<map> and <area>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv{
+            height: 500px;
+            width:100%;
+            /* short hand => image, repeat, position, attachment */
+            /* background: url(images/banner1.jpg) no-repeat center fixed; */
+
+            /* background-color: red; */
+            background-image: url(images/banner1.jpg);
+            /* top, left => default, bottom, right, center */
+            background-position: center;
+            /* no-repeat, repeat => default, repeat-x, repeat-y */
+            background-repeat: no-repeat;
+            /* %, px, contain, cover */
+            background-size: cover;
+            /* local, fixed, scroll => default */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv"></div>
+
+    <br><br>
+    <div>
+       <img src="images/banner2.jpg" alt="">
+    </div>
+</body>
+</html>

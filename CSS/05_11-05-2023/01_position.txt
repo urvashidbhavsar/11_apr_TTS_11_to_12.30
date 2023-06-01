@@ -1,0 +1,10 @@
+position used to how to positionate element on the webpage.
+
+position : static (default)
+position : fixed
+position : sticky
+position : relative 
+position : absolute
+
+some properties are only used with position : (ignore(static)).
+top, bottom, left, right, z-index

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv{
+            height: auto;
+            width: 250px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px;
+            background-color: aqua;
+        }
+        /* always remember if parent value exist then inherit value worked */
+        .mydiv > .subdiv{
+            height: inherit;
+            width: inherit;
+            border: inherit;
+            padding: inherit;
+            margin: inherit;
+            background-color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste maxime laborum hic quibusdam placeat iusto tempora fuga reprehenderit voluptatibus beatae optio recusandae eaque, nesciunt dolorum quo eveniet nisi animi.
+        <div class="subdiv">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellat harum suscipit, laudantium dolor, reiciendis facilis ut esse eligendi nulla nesciunt. Sint esse optio aut illum est deleniti, sed dolor!
+        </div>
+    </div>
+</body>
+</html>

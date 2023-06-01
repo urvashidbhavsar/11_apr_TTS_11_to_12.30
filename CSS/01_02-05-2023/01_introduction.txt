@@ -1,0 +1,33 @@
+what is css?
+=> cascading Style sheet.
+
+why used?
+=> make a proper designing.
+=> for responsive website.
+=> make a blockable designs
+=> for create animations
+
+how many ways/types to add CSS in html file?
+(1) inline = using style attribute
+
+(2) internal = using <style> tag in <head> or <body> section.
+preferable is <head>
+
+(3) external = create an external file using .css extension and link/attach with <link> tag in html file.
+
+syntax: 
+(1) inline => style = "{property : value;}"
+
+(2) internal / external
+    selector{
+        property:value;
+    }
+
+Types of selector :
+(1) element selector 
+(2) class selector 
+(3) id selector 
+(4) group selector
+(5) universal / global selector 
+(6) decendent selector (parent child selection)
+(7) attribute selector 
