@@ -1,0 +1,31 @@
+@media (max-width:576px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* ============ header ========== */
+    header .navigation .logo {
+        flex: 0.5;
+    }
+
+    header .navigation .navbar {
+        display: none;
+    }
+
+    header .navigation .theme {
+        display: flex;
+        justify-content: end;
+    }
+
+    header .navigation .theme button {
+        display: block;
+    }
+
+    /* =============== homepage =============== */
+    .homepage .homepage_banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

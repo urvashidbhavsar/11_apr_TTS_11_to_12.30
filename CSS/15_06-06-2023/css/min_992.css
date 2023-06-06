@@ -1,0 +1,20 @@
+@media (min-width:992px) {
+    .container {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    /* ============ header ========== */
+    header .navigation .navbar {
+        display: block;
+    }
+
+    header .navigation .theme {
+        display: flex;
+        justify-content: start;
+    }
+
+    header .navigation .theme button {
+        display: none;
+    }
+}

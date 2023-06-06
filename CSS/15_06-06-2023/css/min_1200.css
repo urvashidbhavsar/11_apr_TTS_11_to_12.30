@@ -1,0 +1,8 @@
+@media (min-width:1200px) {
+    .container {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    /* header value inherit from 992px */
+}
