@@ -1,0 +1,42 @@
+@media (min-width:992px) {
+    .container {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    /* ============ header ========== */
+    header .navigation .navbar {
+        display: block;
+    }
+
+    header .navigation .theme {
+        display: flex;
+        justify-content: start;
+    }
+
+    header .navigation .theme button {
+        display: none;
+    }
+
+    /* =============== homepage =============== */
+    .homepage .homepage_banner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* ==================== experiance ================ */
+    .experiance .exp-outer-div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .experiance .exp-outer-div .exp-content {
+        padding-top: 0;
+    }
+
+    /* ============================ popular dishes ================= */
+    .popular-dishes .gridbox {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
