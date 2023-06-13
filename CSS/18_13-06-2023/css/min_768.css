@@ -1,0 +1,61 @@
+@media (min-width:768px) {
+    .container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    /* header value inherit from min width 576px */
+
+    /* =============== homepage =============== */
+    .homepage .homepage_banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homepage .homepage_banner .left-banner h1 {
+        font-size: 50px;
+    }
+
+    /* experiance section value inherit from min width 576px */
+
+    /* ============================ popular dishes ================= */
+    .popular-dishes .gridbox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* res section inherit from min width 576px */
+
+    /* ================ about food =================== */
+    .about-food .foodgrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* =========== about chef ========= */
+    .about-chef .about-c-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* ========== review =========== */
+    .review .review_flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* ======== news update ========== */
+    .newsUpdate .title h1 {
+        font-size: 35px;
+    }
+
+    .newsUpdate .forms {
+        width: 60%;
+    }
+
+    /* footer */
+    footer .footer-main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
