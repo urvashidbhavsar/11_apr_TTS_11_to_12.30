@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        variable => name of the memory location.
+        it is container to store data.
+
+        variable take only 1 value at a time.
+
+        in js there are 3 keyword to declare variable.
+        (1) var
+        (2) let
+        (3) const
+
+        valid name : myvar, myVar, MYVAR, my_var, myvar1, myvar_1
+
+        invalid : 1_myvar, 1myvar, my var, my@var
+     -->
+
+    <script>
+        // using var keyword you can redeclare value, and also reassigning.
+        // it is global keyword
+        var x = 10;
+        document.writeln(x)
+        console.log(x);
+
+        var x = 17;
+        document.writeln(x)
+
+        // let and const keyword are update 2015 version
+
+        // using let keyword you can not redeclare value but reassingning.
+        // it is block level keyword
+        let y = 17;
+        document.writeln(y)
+
+        y = 25;
+        document.writeln(y)
+
+        // const means constant which has fixed value.
+        // using const keyword you can not redeclare and reassigning.
+        const pi = 3.14;
+        document.writeln(pi)
+
+    </script>
+</body>
+
+</html>

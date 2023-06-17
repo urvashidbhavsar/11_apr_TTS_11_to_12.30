@@ -1,0 +1,8 @@
+keyword is a reserve word in program
+
+// var
+// let
+// const
+// do
+// for
+// while 
