@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 5, res;
+
+        // logical and 
+
+        // 1st val     2nd val    res 
+        //    true        false      false 
+        //    false        true      false 
+        //    true         true      true 
+        //    false        false     false 
+        res = (a < 10 && a > 5)
+        console.log(res);
+
+        // logical or 
+
+        // 1st val     2nd val    res 
+        //    true        false      true 
+        //    false        true      true 
+        //    true         true      true 
+        //    false        false     false 
+        res = (a < 10 || a > 5)
+        console.log(res);
+
+        res = (!(a < 10 && a > 5))
+        console.log(res);
+    </script>
+</body>
+
+</html>
