@@ -1,0 +1,58 @@
+the conditional statement are :
+(1) if statement 
+(2) switch case statement 
+
+- if statement 
+    if(condition){
+        statements
+    }
+
+- if.. else statement
+    if(condition){
+        statement
+    }else{
+        statement
+    }
+
+- if.. else if.. else statement
+    if(condition){
+        statements
+    }else if(condition){
+        statement
+    }else{
+        statement
+    }
+
+- nested if
+    if(condition){
+        statement;
+        if(condition){
+            statement
+        }else{
+            statement
+        }
+    }else{
+        if(condition){
+            statement
+        }else{
+            statement
+        }
+    }
+
+(2) switch case 
+
+switch(variable_name){
+    case 1:
+        statement;
+        break;
+    case 2:
+        statement:
+        break;
+    .....
+    case N:
+        statement;
+        break;
+    default:
+        statement
+        break;
+}
