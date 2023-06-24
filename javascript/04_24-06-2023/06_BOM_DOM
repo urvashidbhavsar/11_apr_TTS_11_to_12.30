@@ -1,0 +1,20 @@
+BOM = Browser object model 
+
+DOM = Document object model 
+
+=> DOM is a part of BOM 
+
+=> windows objects
+    (1) alert(), (2) confirm(), (3) prompt(), (4) open(), (5) close()
+
+    alert(), confirm(), prompt() also called popup boxes/ dialog boxes 
+    open(), close() used to forcefully open any website and closed it.
+
+=> history object 
+    go(), back(), forward()
+
+=> navigator object 
+    properties
+
+=> screen object 
+    properties

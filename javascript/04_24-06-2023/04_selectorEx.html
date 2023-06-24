@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- innerText and innerHTML is a property to use print value on webpage -->
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p class="p4"></p>
+    <div></div>
+    <script>
+        document.getElementById("p1").innerText = "<b>Hello user, we learn js<b>"
+        document.getElementById("p2").innerHTML = "<b>Hello user, we learn js</b>"
+        document.querySelector("#p3").innerText = "query selector by id"
+        document.querySelector(".p4").innerText = "query selector by class"
+        document.querySelector("div").innerText = "query selector by element"
+    </script>
+</body>
+
+</html>
