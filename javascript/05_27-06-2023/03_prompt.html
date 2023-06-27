@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function prompt_fun() {
+            let user = prompt("Enter any Value : ");
+            if (user == "") {
+                alert("Enter value")
+            } else {
+                document.querySelector("h1").innerHTML = user
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- prompt popup box taken input from user -->
+    <button onclick="prompt_fun()">Prompt Dialog box</button>
+    <h1></h1>
+</body>
+
+</html>
