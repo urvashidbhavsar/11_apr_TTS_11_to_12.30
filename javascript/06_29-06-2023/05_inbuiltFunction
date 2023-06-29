@@ -1,0 +1,8 @@
+(1) add() = use to add value on webpage.
+(2) remove() = use to remove value from webpage.
+(3) toggle() = use to add and remove from webpage.
+(4) contains() => use to check value is exist or not. 
+
+property : 
+(5) classList => use to add or remove css class from webpage.
+(6) length => use to check length of charachters.

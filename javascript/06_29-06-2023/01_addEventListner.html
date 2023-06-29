@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function simpleFunc() {
+            alert("Simple function")
+        }
+    </script>
+</head>
+
+<body>
+    <button id="btn1" onclick="simpleFunc()">Simple Function</button>
+    <button id="btn2">AddEventListner</button>
+    
+    <!-- write addevent listner code end / bottom of the body -->
+    <script>
+        let btn = document.getElementById("btn2");
+        btn.addEventListener("click", function () {
+            alert("AddEventListner")
+        })
+    </script>
+</body>
+
+</html>
