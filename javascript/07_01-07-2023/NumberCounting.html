@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 250px;
+            background-color: teal;
+            color: white;
+            font-size: 70px;
+            display: grid;
+            place-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="counts"></div>
+
+    <script>
+        // setInterval   = set our counting timing
+        // clearInterval = to use stop setInterval
+
+        let countUpdate = setInterval(updateCounts, 120);
+        let start = 100;
+        function updateCounts() {
+            let div = document.getElementById("counts");
+            div.innerHTML = ++start;
+            if (start == 600) {
+                clearInterval(countUpdate)
+            }
+        }
+    </script>
+</body>
+
+</html>
