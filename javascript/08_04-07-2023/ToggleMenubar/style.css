@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0px 80px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: 0.5s all cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+/* create css class for add in header */
+.header-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #900feb;
+    transition: 0.5s all cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+header .header-p {
+    padding: 10px 0px;
+}
+
+header .header-flex {
+    display: flex;
+    align-items: baseline;
+}
+
+header .header-flex .logo {
+    flex: 1;
+}
+
+header .header-flex .logo h1 {
+    font-size: 40px;
+    color: white;
+}
+
+header .header-flex .theme {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: baseline;
+}
+
+header .header-flex .theme .tbtn {
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    border: 2px solid white;
+    color: wheat;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.homepge img {
+    height: 750px;
+    width: 100%;
+}
+
+/* ====================== menubar ================== */
+.menubar {
+    position: fixed;
+    top: -320px;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%; */
+    width: 100%;
+    background-color: #8f0febbe;
+    transition: 1s all ease-in-out;
+    /* transform: scale(0); */
+}
+
+.menubar .navbar {
+    position: relative;
+}
+
+.menubar .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.menubar .navbar ul li {
+    padding: 10px;
+}
+
+.menubar .navbar ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.menubar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.menubar .closebtn button {
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    border: 2px solid white;
+    color: wheat;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* create css for add in html structure which is replace of navbar
+    remember these classes are not include in any structure it add using js.
+*/
+.nav-toggle {
+    position: fixed;
+    top: 0;
+    /* left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    transform: scale(1); */
+    width: 100%;
+    background-color: #900febbe;
+    transition: 1s ease-in-out all;
+}
+
+.nav-toggle .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-toggle .navbar ul li {
+    padding: 10px;
+}
+
+.nav-toggle .navbar ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}

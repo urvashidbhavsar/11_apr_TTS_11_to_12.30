@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- in variable we can store only 1 data at a time  -->
+    <!-- in array we can store multiple values at a time -->
+    <!-- collection of same data type value -->
+
+    <!-- 2 ways to create an array 
+        (1) simple array
+        (2) constructor array
+        -->
+    <script>
+        let subject = ["html", "css", "js", "c lang", "c++", "java", "react", "dbms"];
+
+        console.log(subject);
+        // document.write(subject);
+
+        // single display
+        console.log(subject[0]);
+        console.log(subject[1]);
+        console.log(subject[2]);
+        console.log(subject[3]);
+        console.log(subject[4]);
+        console.log("==========================");
+        // for print an array use for..of loop 
+        var subj;
+        for (subj of subject) {
+            console.log(subj);
+            document.write(subj + " | ")
+        }
+
+    </script>
+</body>
+
+</html>

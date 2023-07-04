@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 2 ways to create an object 
+            (1) simple object
+            (2) constructor object
+    -->
+
+    <script>
+        let person = {
+            firstname: "Saif",
+            lastname: "Ali",
+            mobileno: 9874565412,
+            birthdate: "10-10-2000",
+        }
+        console.log(person);
+        document.writeln(person.firstname);
+        document.writeln(person.lastname);
+
+        // to print an object use for..in loop
+        var per
+        for (per in person) {
+            console.log(per + " : " + person[per]);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="drop.css">
+</head>
+
+<body>
+    <div class="list">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Service</a>
+                <ul class="showmenu">
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 2</a></li>
+                    <li><a href="">Service 3</a></li>
+                </ul>
+            </li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // click dropdown
+        let drop = document.querySelector(".dropdown")
+        // target showmenu
+        let showmenu = document.querySelector(".showmenu")
+        drop.addEventListener("click", function () {
+            showmenu.classList.toggle("hidemenu")
+        })
+    </script>
+</body>
+
+</html>
