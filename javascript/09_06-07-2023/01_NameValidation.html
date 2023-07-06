@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .formField {
+            padding: 5px;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="formField">
+            <label for="">Enter Your Name </label>
+            <input type="text" name="" id="username" onblur="return checkName()" onkeyup="return checkValidName()">
+            <span id="msg"></span>
+        </div>
+        <div class="formField">
+            <button type="submit" onclick="return checkName()">Click Here</button>
+        </div>
+    </form>
+    <script>
+        // work with tab key through use blur event (when focus lost from an element)
+        // click event
+        function checkName() {
+            let uname = document.getElementById("username").value;
+            if (uname == "" || uname == null) {
+                document.getElementById("msg").innerHTML = "Enter Your name"
+                return false;
+            } else {
+                document.getElementById("msg").innerHTML = ""
+                return false;
+            }
+        }
+        // keyboard event 
+        function checkValidName() {
+            let uname = document.getElementById("username").value;
+            let regEx = /^[a-zA-Z]*$/
+            // string.match(expression)
+            if (!(uname.match(regEx)) || uname.length < 2) {
+                document.getElementById("msg").innerHTML = "Invalid name"
+                return false;
+            } else {
+                document.getElementById("msg").innerHTML = "";
+                return false;
+            }
+        }
+    </script>
+    <!-- 
+        expression 
+
+        // = area / scope 
+        [] = expression define 
+        ^ = check start value 
+        *$ / +$ = check value at the end of text
+
+        to check reg ex use 2 function 
+        match(), test()
+     -->
+</body>
+
+</html>

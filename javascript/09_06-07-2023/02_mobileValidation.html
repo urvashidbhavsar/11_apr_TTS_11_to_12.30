@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .formField {
+            padding: 5px;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="formField">
+            <label for="">Enter Mobile No </label>
+            <input type="text" name="" id="mobile" onblur="return CheckMobileNo()" onkeyup="return checkMobileEx()"
+                maxlength="10">
+            <span id="msg"></span>
+        </div>
+        <div class="formField">
+            <button type="submit" onclick="return CheckMobileNo()">Click Here</button>
+        </div>
+    </form>
+
+    <script>
+        // click and blur
+        function CheckMobileNo() {
+            let mno = document.getElementById("mobile").value;
+            if (mno == "" || mno == null) {
+                document.getElementById("msg").innerText = "Enter Number";
+                return false
+            } else if (mno.length < 10) {
+                document.getElementById("msg").innerText = "Enter 10 number";
+                return false
+            }
+            else {
+                document.getElementById("msg").innerText = "";
+                return false
+            }
+        }
+
+        // keyboard event 
+        function checkMobileEx() {
+            let mno = document.getElementById("mobile").value;
+            let regEx = /^[0-9]*$/
+            let startEx = /^[6-9]/
+            // expression.test(string)
+            if (!(regEx.test(mno)) || (!startEx.test(mno))) {
+                document.getElementById("msg").innerText = "Invalid Number"
+                return false
+            } else {
+                document.getElementById("msg").innerText = ""
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>
