@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label for="">Enter Email : </label>
+        <input type="text" name="" id="mail" onblur="return checkmail()" onkeyup="return emailEx()">
+        <button onclick="return checkmail()">Click Here</button>
+
+        <p id="msg"></p>
+    </form>
+
+    <script>
+        function checkmail() {
+            let mail = document.getElementById("mail").value;
+            if (mail == "" || mail == null) {
+                document.getElementById("msg").innerHTML = "Enter Mail"
+                return false;
+            } else {
+                document.getElementById("msg").innerHTML = ""
+                return false;
+            }
+        }
+        // keyboard event 
+        // email expression taken from https://www.w3resource.com/javascript/
+        function emailEx() {
+            let mail = document.getElementById("mail").value;
+            let mailEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3})+$/;
+            if (mailEx.test(mail)) {
+                document.getElementById("msg").innerHTML = ""
+                return false
+            } else {
+                document.getElementById("msg").innerHTML = "Enter Proper Email"
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>
