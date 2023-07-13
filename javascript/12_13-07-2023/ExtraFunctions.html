@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        Number 1 : <input type="text" name="" id="num1">
+        <br><br>
+        Number 2 : <input type="text" name="" id="num2">
+        <br><br>
+        <button onclick="return additionOfNumbers()">Click Here</button>
+
+        <p>Answer is : <span id="msg"></span></p>
+    </form>
+    <script>
+        function additionOfNumbers() {
+            let n1 = document.getElementById("num1").value;
+            let n2 = document.getElementById("num2").value;
+            let msg = document.getElementById("msg")
+
+            // let sum = Number(n1) + Number(n2);
+            // let sum = parseInt(n1) + parseInt(n2);
+            let sum = parseFloat(n1) + parseFloat(n2);
+            msg.innerHTML = sum;
+            return false
+        }
+    </script>
+</body>
+
+</html>
