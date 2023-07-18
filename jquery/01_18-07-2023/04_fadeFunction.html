@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 100px;
+            width: 100px;
+            background-color: darkblue;
+        }
+
+        .div2 {
+            height: 100px;
+            width: 100px;
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- fade functions : fadeIn() fadeOut() fadeToggle() fadeTo()
+    
+    it worked on opacity-->
+    <button id="btn1">FadeIn</button>
+    <button id="btn2">fadeOut</button>
+    <button id="btn3">FadeToggle</button>
+
+    <hr>
+    <div class="div1"></div> <br>
+    <div class="div2"></div>
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".div1").fadeIn(2000)
+            })
+            $("#btn2").click(function () {
+                $(".div1").fadeOut(2000)
+            })
+            $("#btn3").click(function () {
+                $(".div1").fadeToggle(2000)
+            })
+
+            $(".div2").mouseover(function () {
+                $(".div2").fadeTo(1000, 0.5)
+            })
+            $(".div2").mouseout(function () {
+                $(".div2").fadeTo(1000, 1)
+            })
+        })
+    </script>
+</body>
+
+</html>

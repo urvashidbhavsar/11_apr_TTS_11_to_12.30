@@ -1,0 +1,20 @@
+jquery is a library of javascript.
+
+- it is easy to use, fast and feature rich.
+
+version = jquery3 = 3.7.0
+
+website = jquery.com
+
+use cdn to use jquery in your html file 
+(1) offline package download
+(2) online cdn 
+
+syntax : 
+$(document).ready(function(){
+    $(selector).event(function(){
+        $(selector).jquery_function();
+    })
+})
+
+selector = id, class, element ,group, universal
