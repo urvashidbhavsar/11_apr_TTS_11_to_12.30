@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Click</button>
+    <hr>
+    <div class="mydiv"></div>
+    <!-- chaining means used two or more function together -->
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".mydiv").slideUp(1000).fadeIn(2000).fadeOut(1000).slideDown().animate({ marginLeft: "200px" }, 5000)
+            })
+        })
+    </script>
+</body>
+
+</html>
