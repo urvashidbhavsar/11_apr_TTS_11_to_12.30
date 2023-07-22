@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 200px;
+            width: 250px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- there is 2 remove function  : empty() remove()-->
+    <button id="btn1">Empty</button>
+    <button id="btn2">Remove</button>
+
+    <hr>
+    <div class="mydiv">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur magni laudantium soluta odio earum, ad
+        quos animi molestias ex eaque sapiente officiis cum unde possimus perferendis vel sequi. Corporis, aliquam.
+    </div>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".mydiv").empty()
+            })
+            $("#btn2").click(function () {
+                $(".mydiv").remove()
+            })
+        })
+    </script>
+</body>
+
+</html>

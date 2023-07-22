@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- add function : append(), prepend(), before() and after() -->
+    <!-- append() and prepend() used in block element -->
+    <!-- before() and after() used in inline element -->
+    <button id="btn1">Append</button>
+    <button id="btn2">Prepand</button>
+    <button id="btn3">Before</button>
+    <button id="btn4">After</button>
+
+    <hr>
+    <ul>
+        <li>List 1</li>
+    </ul>
+    <a href="">Hello</a>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("ul").append("<li>New List</li>")
+            })
+            $("#btn2").click(function () {
+                $("ul").prepend("<li>Prev List</li>")
+            })
+            $("#btn3").click(function () {
+                $("a").before("!!")
+            })
+            $("#btn4").click(function () {
+                $("a").after("!!")
+            })
+        })
+    </script>
+
+</body>
+
+</html>
