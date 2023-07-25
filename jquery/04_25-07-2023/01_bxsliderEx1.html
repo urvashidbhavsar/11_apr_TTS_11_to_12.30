@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bxslider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        img {
+            height: 600px;
+            width: 100%;
+        }
+
+        .bx-wrapper {
+            border: none;
+            box-shadow: none;
+        }
+
+        .bx-wrapper .bx-pager {
+            bottom: 40px;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            background-color: white;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- bxslider.com -->
+    <div class="bxslider">
+        <div class="sliders">
+            <img src="images/wallpaper1.avif" alt="" title="image 1">
+        </div>
+        <div class="sliders">
+            <img src="images/wallpaper2.jpg" alt="" title="image 2">
+        </div>
+        <div class="sliders">
+            <img src="images/wallpaper3.avif" alt="" title="image 3">
+        </div>
+        <div class="sliders">
+            <img src="images/wallpaper4.jpg" alt="" title="image 4">
+        </div>
+    </div>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                mode: "fade",
+                speed: 1000,
+                randomStart: true,
+                infiniteLoop: true,
+                captions: true,
+                pager: true,
+                // pagerType: "short",
+                controls: true,
+                // autoControls: true,
+                auto: true,
+                autoHover: true,
+            });
+        });
+    </script>
+</body>
+
+</html>
