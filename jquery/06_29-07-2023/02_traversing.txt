@@ -1,0 +1,13 @@
+traversing = move through
+
+(1) ancestor = means parent / grandparent 
+    parent() parents() parentuntil()
+
+(2) decendent = child 
+    find() , children()
+
+(3) siblings  = similar 
+    siblings(), next(), nextAll, nextUntil(), prev(), prevAll(), prevUntil()
+
+(4) filter = searching 
+    filter(), first(), last(), eq(), not()

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            padding: 30px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- dimensions = height(), width(), innerHeight(), innerWidth(), outerHeight() outerWidth() -->
+    <div class="div1"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $(".div1").height(200).width(400).css({ backgroundColor: "red" })
+            $txt = "";
+            $txt = "Height : " + $(".div1").height() +
+                " <br>Width : " + $(".div1").width() +
+                " <br>InnerHeight : " + $(".div1").innerHeight() +
+                " <br>InnerWidth : " + $(".div1").innerWidth() +
+                " <br>OuterHeight : " + $(".div1").outerHeight() +
+                " <br>OuterWidth : " + $(".div1").outerWidth() +
+                " <br>OuterHeight : " + $(".div1").outerHeight(true) + "<br>OuterWidth : " + $(".div1").outerWidth(true)
+
+            $(".div1").html($txt)
+        })
+    </script>
+</body>
+
+</html>

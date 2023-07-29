@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        ul,
+        li {
+            border: 2px solid gray;
+            margin: 10px;
+        }
+
+        .changeVal {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Click here</button>
+    <hr>
+    <div class="main">Main
+        <div class="sub">Sub
+            <ul>ul
+                <li>List 1</li>
+                <li>List 2</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main1">
+        <div class="sub1">
+            <ul>
+                <li>List 1</li>
+                <li>List 2</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                // $("ul").parent().addClass("changeVal")
+                // $("ul").parents().addClass("changeVal")
+                $(".sub").parentsUntil("body").addClass("changeVal")
+            })
+        })
+    </script>
+</body>
+
+</html>
