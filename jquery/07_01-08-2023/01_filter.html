@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .changeVal {
+            color: blue;
+            border: 2px solid red;
+            padding: 10px;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Click</button>
+    <hr>
+    <p class="p1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illo aliquid beatae, qui minima totam
+        consequatur voluptates, inventore autem nostrum, in itaque delectus aspernatur rerum voluptatibus. Officiis
+        natus et magni?
+    </p>
+    <p class="p2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illo aliquid beatae, qui minima totam
+        consequatur voluptates, inventore autem nostrum, in itaque delectus aspernatur rerum voluptatibus. Officiis
+        natus et magni?
+    </p>
+    <p class="p3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illo aliquid beatae, qui minima totam
+        consequatur voluptates, inventore autem nostrum, in itaque delectus aspernatur rerum voluptatibus. Officiis
+        natus et magni?
+    </p>
+    <p class="p4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illo aliquid beatae, qui minima totam
+        consequatur voluptates, inventore autem nostrum, in itaque delectus aspernatur rerum voluptatibus. Officiis
+        natus et magni?
+    </p>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // $("p").filter(".p3").addClass("changeVal")
+                // $("p").first().addClass("changeVal")
+                // $("p").last().addClass("changeVal")
+                // $("p").eq(3).addClass("changeVal") // apply index number
+                $("p").not(".p2").addClass("changeVal")
+            })
+        })
+    </script>
+</body>
+
+</html>

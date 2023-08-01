@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Ajax : Asynchronised javascript and XML 
+        XML : Extentible markup language
+
+        display another file data without reloading whole page.
+    -->
+    <!-- <button id="btn1">Click Here To load Ajax</button> -->
+    <section id="header"></section>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $("#btn1").click(function () {
+            //     $("h1").load("data.txt")
+            // })
+            $("#header").load("Menubar.html")
+        })
+    </script>
+</body>
+
+</html>
