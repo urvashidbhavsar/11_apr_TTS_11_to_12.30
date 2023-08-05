@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inputText {
+            background-color: yellow;
+            border: 2px solid red;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    Enter Any value :<input type="text" id="mytext">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#mytext").keyup(function () {
+                if ($("#mytext").val().length > 10) {
+                    $("#mytext").addClass("inputText")
+                } else {
+                    $("#mytext").removeClass("inputText")
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

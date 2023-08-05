@@ -1,0 +1,13 @@
+heading classes => tags <h1> to <h6> or classes => .h1 to .h6 
+display classes => display-1 to display-6 
+inline Tag classes or tags 
+font size => fs(1-6)
+font weight => fw 
+font-style => fst 
+
+height => h-25, h-50, h-75, h-100, h-auto 
+width => w-25, w-50, w-75, w-100, w-auto 
+
+border => border
+border-width => border(0-5)
+border-color => border(bootstrap-color)
