@@ -1,0 +1,17 @@
+bootstrap5 are used to 6 responsive tiers.
+
+    css                     bootstrap
+max-width:576px                - 
+min-width:576px                sm  (small)
+min-width:768px                md  (medium)
+min-width:992px                lg (large)
+min-width:1200px               xl (extra large)
+min-width:1400px              xxl (extra extra large)
+
+container class for use margin left and right 
+container-fluid for less give margin 
+
+powerful gridbox / flexbox 
+.row and .col
+row class give 12 column facility 
+
