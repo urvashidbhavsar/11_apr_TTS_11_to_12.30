@@ -1,0 +1,16 @@
+(1) label                => form-label 
+(2) input type = text, date, password, search, email, number, datetime-local, month, time, file     => form-control 
+(3) textarea             => form-control 
+
+(4) radiobutton, checkbox   => form-check-input 
+(5) radiobutton, checkbox's label   => form-check-label 
+(6) radiobutton and checkbox used in div tag so apply class in div => form-check
+(6) radiobutton and checkbox set in one line => form-check-inline 
+
+(7) for dropdown => apply class in select => form-select 
+(8) for color pallate => form-color 
+
+(9)if we join radio, checkbox, button or label with textbox used class in parent div => input-group 
+and apply class in radio, checkbox, button or label => input-group-text
+
+(10) for input type range => form-range
