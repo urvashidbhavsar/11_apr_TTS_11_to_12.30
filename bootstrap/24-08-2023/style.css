@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#mainpage {
+    display: none;
+}
+
+.container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.btnpink {
+    background-color: #ba2f46;
+    color: white;
+    height: 45px;
+    padding: 0px 15px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s ease all;
+}
+
+.btnpink:hover {
+    background-color: transparent;
+    color: #ba2f46;
+    border: 2px solid #ba2f46;
+}
+
+.btnpink-rev {
+    background-color: transparent;
+    color: #ba2f46;
+    height: 45px;
+    padding: 0px 15px;
+    border: 2px solid #ba2f46;
+    border-radius: 10px;
+    transition: 0.5s ease all;
+}
+
+.btnpink-rev:hover {
+    background-color: #ba2f46;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.btnblack {
+    background-color: transparent;
+    color: black;
+    height: 45px;
+    padding: 0px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s ease all;
+}
+
+.btnblack:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.Topheader {
+    background-color: #1f1f67;
+}
+
+.Topheader ul li {
+    padding: 5px;
+}
+
+.Topheader ul li {
+    border-right: 1px solid white;
+}
+
+.Topheader ul li a {
+    color: white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+header .navbar-nav .nav-link {
+    color: gray;
+    font-size: 17px;
+}
+
+header .navbar-nav .nav-link.active {
+    color: #ba2f46;
+}
+
+.homebanner .banner1 {
+    background: url(images/banner1.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 150px 0px;
+}
+
+.homebanner .banner2 {
+    background: url(images/banner2.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 150px 0px;
+}
+
+.homebanner .banner3 {
+    background: url(images/banner3.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 150px 0px;
+}
+
+.homebanner .banner4 {
+    background: url(images/banner4.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 150px 0px;
+}
+
+.homebanner .banner1::after,
+.banner2::after,
+.banner3::after,
+.banner4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.homebanner .homep {
+    color: rgb(197, 196, 196);
+}
+
+.sol-head {
+    color: #1f1f67;
+}
+
+.ItSolSec {
+    background-color: #dce6f3;
+}
+
+.ItSolSec a {
+    color: #1f1f67;
+    transition: 0.5s ease all;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ItSolSec a:hover {
+    color: #ba2f46;
+}
+
+.processSec .overlay {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.processSec .overlay img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.processSec .show {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s all ease-in-out;
+}
+
+.processSec .show .icon {
+    height: 50px;
+    width: 50px;
+    background-color: #ba2f46;
+    color: white;
+    font-size: 25px;
+    display: grid;
+    place-content: center;
+    border-bottom-left-radius: 10px;
+}
+
+.processSec .overlayText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1a5edea5;
+    color: white;
+    padding: 10px;
+    display: grid;
+    place-content: center;
+    transform: scale(0);
+    transition: 0.6s all ease-in-out;
+}
+
+.processSec .overlay:hover .overlayText {
+    transform: scale(1);
+    border-radius: 10px;
+}
+
+.processSec .overlay:hover .show {
+    transform: scale(0);
+}
+
+.exper_sec .title h2 {
+    color: #1f1f67;
+}
+
+.exper_sec h5 {
+    color: #1f1f67;
+}
+
+.exper_sec ul li h6 {
+    color: #1f1f67;
+}
+
+.exper_sec .list-group-item {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    border-radius: 5px !important;
+}
+
+.exper_sec .list-group-item.active {
+    background-color: #ba2f46;
+}
+
+.exper_sec .accordion-item {
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.accordion-item:first-of-type {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+    background-color: #ba2f46 !important;
+    color: white !important;
+}
+
+.productSec {
+    background-color: #eaf0fc;
+}
+
+.p-services {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.p-services .text h4 {
+    color: #1f1f67;
+}
+
+.p-services .text a {
+    color: #1f1f67;
+}
+
+.p-services .text p {
+    font-size: 17px;
+}
+
+.p-services .text {
+    padding: 0px 30px 30px;
+}
+
+.p-services .icon {
+    font-size: 40px;
+    color: #ba2f46;
+    padding: 30px;
+}
+
+/* .p-services .service1 {} */
+
+.p-services:hover .service1 {
+    background-image: url(images/s1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: unset;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.service1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.475);
+    z-index: -1;
+}
+
+.p-services:hover .service2 {
+    background-image: url(images/s2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: unset;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.service2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.475);
+    z-index: -1;
+}
+
+.p-services:hover .service3 {
+    background-image: url(images/s3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: unset;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.service3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.475);
+    z-index: -1;
+}
+
+.p-services:hover p {
+    color: white !important;
+}
+
+.p-services:hover h4 {
+    color: white !important;
+}
+
+.p-services:hover a {
+    color: white !important;
+}
+
+.p-services:hover .icon {
+    color: white;
+}
+
+.logocarousel {
+    background-color: #ba2f46;
+}
+
+footer {
+    background-color: #242424;
+}
+
+footer h2 span {
+    color: #ba2f46;
+}
+
+footer ul li {
+    padding-bottom: 15px;
+}
+
+footer .icon {
+    height: 40px;
+    width: 40px;
+    background-color: #424141;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+footer .icon a {
+    color: white;
+}
+
+/* ================= media  query ====================== */
+@media (max-width:576px) {
+    .contct {
+        display: none !important;
+    }
+
+    .menubar {
+        width: 40%;
+    }
+
+    .solFlex {
+        flex-direction: column-reverse !important;
+    }
+}
+
+@media (min-width:576px) {
+    .contct {
+        display: none !important;
+    }
+
+    .menubar {
+        width: 40%;
+    }
+
+    .solFlex {
+        flex-direction: column-reverse !important;
+    }
+}
+
+@media (min-width:768px) {
+    .itsolbox3 {
+        width: 370px;
+        margin: auto;
+    }
+}
+
+@media (min-width:992px) {
+    .contct {
+        display: inline-block !important;
+    }
+
+    .menubar {
+        width: 100%;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        justify-content: center !important;
+        margin: auto;
+    }
+
+    .solFlex {
+        flex-direction: row !important;
+    }
+
+    .itsolbox3 {
+        width: unset;
+        margin: unset;
+    }
+}

@@ -1,0 +1,57 @@
+<html>
+
+<body>
+    <style>
+        .outer {
+            height: 250px;
+            width: 250px;
+            border: 2px solid gray;
+            position: relative;
+            margin: 200px auto;
+            border-radius: 50%;
+            display: grid;
+            place-content: center;
+            z-index: 11111;
+        }
+
+        .main {
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            top: -2px;
+            left: -1px;
+            border-top: 5px solid red;
+            border-radius: 50%;
+            border-bottom: 2px solid transparent;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            /* margin: 180px auto; */
+            animation: Loader 2s linear infinite;
+        }
+
+        .text {
+            font-size: 30px;
+            font-weight: bold;
+            /* color: white; */
+        }
+
+        @keyframes Loader {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            /* 50%{
+                    transform: rotate(140deg);
+                } */
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <div class="outer">
+        <div class="main"></div>
+        <div class="text">Loading...</div>
+    </div>
+</body>
+
+</html>
