@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Satisfy', cursive;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+
+header .navbar ul {
+    width: 100%;
+    justify-content: end;
+}
+
+header .navbar ul a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header .navbar ul a:hover {
+    color: gray;
+}
+
+header input[type="text"] {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+header button {
+    border-top-right-radius: 40px !important;
+    border-bottom-right-radius: 40px !important;
+}
+
+.homepage {
+    background: url(image/headerbg.png) no-repeat center;
+    background-size: cover;
+}
+
+.homepage .btnWhite {
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    height: 40px;
+    padding: 0px 10px;
+    border: 2px solid white;
+}
+
+.homepage .homeimage {
+    position: relative;
+}
+
+.homepage .homeimage .subimg {
+    position: absolute;
+    bottom: -165px;
+    right: -77px;
+}
+
+.homepage .homeimage .subimg img {
+    width: 413px;
+    height: 400px;
+}
